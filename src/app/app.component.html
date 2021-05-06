@@ -1,0 +1,282 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="container">
+  <div class="text-center my-5 text-dark">
+    <h4 class="display-4 fst-italic text-dark pt-4">MOBILE PHONES</h4>
+  </div>
+
+      <div class="row row-cols-md-3 row-cols-1">
+        <div class="col">
+          <app-product-one></app-product-one>
+        </div>
+    
+        <div class="col">
+          <app-product-two></app-product-two>
+        </div>
+    
+        <div class="col">
+          <app-product-three></app-product-three>
+        </div>
+    
+        <div class="col">
+          <app-product-four></app-product-four>
+        </div>
+    
+        <div class="col">
+          <app-product-five></app-product-five>
+        </div>
+    
+        <div class="col">
+          <app-product-six></app-product-six>
+        </div>
+
+
+
+
+
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Display registered users data in accordion  and also implement delete user operation. -->
+
+
+  <!-- Heading and Form Details -->
+  <div class="w-100 container mt-5">
+
+
+    <h3 class="display-3">User Data</h3>
+    <hr>
+
+    <form #ref="ngForm" (ngSubmit)="addData(ref)">
+      <div class="mb-3 ">
+        <label for="Name" class="form-label">Enter Name</label>
+        <input type="text" class="form-control" name="Name" id="Name" ngModel>
+      </div>
+
+      <div class="mb-3 ">
+        <label for="DOB" class="form-label">Enter Date of Birth</label>
+        <input type="date" class="form-control" name="DOB" id="DOB" ngModel>
+      </div>
+
+      <div class="mb-3 ">
+        <label for="age" class="form-label">Enter age</label>
+        <input type="number" class="form-control" name="age" id="age" ngModel>
+      </div>
+
+      <div class="mb-3 ">
+        <label for="Nationality" class="form-label">Enter Nationality</label>
+        <select name="Country" id="cty" name="Nationality" class="form-select" ngModel>
+          <option value="aus">Australia</option>
+          <option value="ind">India</option>
+          <option value="usa">USA</option>
+          <option value="fra">France</option>
+          <option value="bz">Brazil</option>
+          <option value="ch">China</option>
+        </select>
+      </div>
+
+      <button type="submit"  class="btn btn-warning d-block m-auto">submit</button>
+
+    </form>
+
+
+  <div class="text-center mt-5">
+    <h2 class="text-info display-5 bg-light">List of registered users</h2>
+
+    <h1 *ngIf="users.length==0" class="fst-italic display-6">No users found</h1>
+
+    <div *ngIf="users.length!=0">
+      <div class="accordion my-5" id="accordionExample">
+        <div class="accordion-item" *ngFor="let obj of users;let ind=index">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#acr'+ind">
+              USER:{{ind+1}}
+            </button>
+            
+          </h2>
+          <div id="collapse" class="accordion-collapse collapse" [attr.id]="'acr'+ind" data-bs-parent="#accordionExample">
+            <div class="accordion-body flex bg-dark text-light text-start">
+              
+              
+
+              <h3 class="fontt">Name:  {{obj.Name}}</h3>
+              <h3 class="fontt">Date Of Birth: {{obj.DOB}}</h3>
+              <h3 class="fontt">Age: {{obj.age}}</h3>
+              <h3 class="fontt">Nationality: {{obj.Nationality}}</h3>
+
+
+        
+              <button class="btn btn-danger d-block mx-auto" (click)="deleteuser(ind)"><i class="bi bi-trash"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="w-50 mx-auto mt-5">
+  <h3 class="text-center text-info display-4">Username Data Base</h3>
+  <hr>
+
+  
+  <div class="row">
+    <div class="col-6 text-center fs-4">
+      <label for="">Enter Username</label>
+    </div>
+    <div class="col-6">
+      <input type="text"  class="form-control" #ref>
+    </div>
+  </div>
+
+
+  <button class="btn btn-warning d-block mx-auto mt-5"  (click)="sendItem(ref.value)">Add to list</button>
+
+ 
+    <div class="text-center mt-5 text-success bg-light fst-italic fontt">
+      <h3 *ngIf="success">{{ref.value}} added successfully</h3>
+    </div>
+
+   
+  <div class="text-center mt-5">
+    <button class="btn btn-success" (click)="changeStatus()">{{status? "Hide Names":"Show Names"}}</button>
+  </div>
+
+
+  
+
+  <div class="text-center mt-5" *ngIf="status">
+    <h1 class="text-dark mt-5 display-6">List of names</h1>
+  <hr>
+    <h4 *ngFor="let item of todoItems" class="bg-light">{{item}}</h4>
+  </div>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="text-center">
+   <h1 class="primary">'{{nameofCourse}}'</h1>
+
+   <img [src]="image" alt="">
+ </div>
+
+
+     -->

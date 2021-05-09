@@ -4,8 +4,16 @@
     <div class="card-body">
         <div>
         <p class="card-text text-center display-6">{{obj.productTitle}}</p>
-        <p class="card-text">{{obj.description}}</p>
-        <button class="btn btn-warning d-block mx-auto px-3"><i class="bi bi-cart-plus"> ADD PRODUCT</i></button>
+        <h6 class="card-text">{{obj.description}}</h6>
+
+            <dl>
+                <dt>Specifications:</dt>
+                <dd>Camera: {{obj.cam}}</dd>
+                <dd>RAM: {{obj.ram}}</dd>
+                <dd>Processor: {{obj.processor}}</dd>
+            </dl>
+        
+        <button class="btn btn-warning d-block mx-auto px-3" (click)="sendDetails(obj.productTitle)"><i class="bi bi-cart-plus"> ADD PRODUCT</i></button>
         </div>
     </div>
 </div>

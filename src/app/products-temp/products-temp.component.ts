@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { Product } from '../models/product.model';
 
 @Component({
@@ -10,40 +10,68 @@ export class ProductsTempComponent{
   products:Product[]=[
 
     {
-    productTitle:"Technology-1",
-    description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-    productImage:"https://youmatter.world/app/uploads/sites/2/2019/11/tech-planet.jpg"
+    productTitle:"Samsung A-50",
+    description:"Model: A50 Brand: Samsung",
+    cam:"20mp",
+    ram:"4gb",
+    processor:"Snapdragon 880",
+    productImage:"https://images.samsung.com/is/image/samsung/in-galaxy-m51-m515fz-6gb-sm-m515fzkdins-sm-m---fzkeins-304622882?$684_547_PNG$"
     },
     {
-    productTitle:"Technology-2",
-    description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-    productImage:"https://apicms.thestar.com.my/uploads/images/2020/08/24/831125.jpg"
-    },
-    
-    {
-    productTitle:"Technology-3",
-    description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-    productImage:"https://itconsultingindubai.files.wordpress.com/2016/03/choosing-a-technology-solution.jpg"
-    },
-    
-    {
-    productTitle:"Technology-4",
-    description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-    productImage:"https://itconsultingindubai.files.wordpress.com/2016/03/choosing-a-technology-solution.jpg"
+    productTitle:"Galaxy-S9",
+    description:"Model: S9 Brand: Samsung",
+    cam:"25mp",
+    ram:"4gb",
+    processor:"Snapdragon 880",
+    productImage:"https://lh3.googleusercontent.com/proxy/Tk8_C44Qm97Q-LySbzOfXksS5xFacQDZw7MLoyJJJq0E66pXiSztUnUET3xPK3x7xnr6JFDFovjlg3lBR_Yv8Y7qTmsOXoZWoJdDc2fDR7UAUGlVxvZ2"
     },
     
     {
-    productTitle:"Technology-5",
-    description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-    productImage:"https://wallpaperaccess.com/full/4755970.jpg"
+    productTitle:"IPhone 12 Pro",
+    description:"Model: 12pro Brand: Iphone",
+    cam:"50mp",
+    ram:"12gb",
+    processor:"Apple A13",
+    productImage:"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-red-select-2020?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1604343703000"
     },
     
     {
-    productTitle:"Technology-6",
-    description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-    productImage:"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5577975.jpg"
+    productTitle:"One-plus 8 Pro",
+    description:"Model: 8Pro Brand: Oneplus",
+    cam:"40mp",
+    ram:"8gb",
+    processor:"Snapdragon 850",
+    productImage:"https://image01.oneplus.net/shop/202009/16/1-M00-19-CB-rB8LB19hd1GAbRaNAANs4AY88Fk626.png"
+    },
+    
+    {
+    productTitle:"Redmi Note Plus",
+    description:"Model: Note-Plus Brand: Redmi",
+    cam:"23mp",
+    ram:"3gb",
+    processor:"Snapdragon 870",
+    productImage:"https://i01.appmifile.com/webfile/globalimg/in/cms/FE1C9BBB-AC9A-EB3D-713C-F1718FAB3FC9.jpg"
+    },
+    
+    {
+    productTitle:"Google Pixel",
+    description:"Model: Pixel-3 Brand: Google",
+    cam:"20mp",
+    ram:"8gb",
+    processor:"Snapdragon 900",
+    productImage:"https://www.gizmochina.com/wp-content/uploads/2019/09/google-pixel-500x500.jpg"
     }
     ];
+
+
+    recievedDetails=[]
+    count=0
+    getRecivedDetails(title){
+      
+      this.recievedDetails.push(title)
+      this.count+=1  
+    }
+
 }
 
 

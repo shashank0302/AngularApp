@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
+
+
 import { Product } from '../models/product.model';
 
 @Component({
@@ -7,8 +9,12 @@ import { Product } from '../models/product.model';
   styleUrls: ['./product-one.component.css']
 })
 export class ProductOneComponent{
-
+  //recieving data
   @Input() obj:Product
 
+  @Output() myEvent=new EventEmitter()
 
+  sendDetails(Title){
+    this.myEvent.emit(Title)
+  }
 }

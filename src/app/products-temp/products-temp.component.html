@@ -1,6 +1,15 @@
+<div class="text-center lop">
+    <h3>No.of products in cart: {{count}} </h3>
+    <ul *ngFor="let re of recievedDetails" class="list-group">
+        <li class="list-group-item">
+        {{re}} added to cart
+        </li>
+    </ul>
+</div>
+
 <div class="row row-cols-md-2 row-cols-lg-3 row-cols-sm-1 row-cols-1" id="space">
     <div class="col" *ngFor="let i of products">
-        <app-product-one [obj]=i></app-product-one>
+        <app-product-one [obj]=i (myEvent)="getRecivedDetails($event)"></app-product-one>
     </div>
 
 </div>

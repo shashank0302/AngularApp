@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { ProductOneComponent } from './product-one/product-one.component';
+import { ProductsTempComponent } from './products-temp/products-temp.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductOneComponent
+    ProductOneComponent,
+    ProductsTempComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

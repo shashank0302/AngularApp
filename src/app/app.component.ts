@@ -10,25 +10,7 @@ import { NgForm } from '@angular/forms';
 
 
 export class AppComponent {
-  users=[];
-
- 
-  addData(ref:NgForm){
-
-    let userObj=ref.value; 
-    console.log(userObj)
-    //push into users array
-    this.users.push(userObj)
-
-    //clear form flields
-    ref.reset()
-  }
-
-  //to delete a User data
-
-  deleteuser(index){
-    this.users.splice(index,1)
-  }
+  
 }
 
 
@@ -68,24 +50,25 @@ export class AppComponent {
 
 
 
+  // users=[];
 
+ 
+  // addData(ref:NgForm){
 
+  //   let userObj=ref.value; 
+  //   console.log(userObj)
+  //   //push into users array
+  //   this.users.push(userObj)
 
+  //   //clear form flields
+  //   ref.reset()
+  // }
 
+  // //to delete a User data
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  // deleteuser(index){
+  //   this.users.splice(index,1)
+  // }
 
 
 

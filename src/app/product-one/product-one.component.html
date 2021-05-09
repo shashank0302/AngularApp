@@ -1,9 +1,11 @@
-<div class="card m-3 box-shadow border-dark">
-    <img src="https://images.samsung.com/is/image/samsung/p6pim/in/sm-m127gzbhins/gallery/in-galaxy-m-sm-m127gzbhins-sm-m---gzbgins-405435076?$684_547_PNG$" width="100%" height="300px" alt="">
+<div class="card m-3 shadow ">
+    <img class="card-img" src={{obj.productImage}} width="100%" height="300px" alt="">
     <hr>
     <div class="card-body">
-        <div class="d-flex justify-content-between">
-        <p class="card-text">Model: A50 <br> Brand: Samsung</p>
+        <div>
+        <p class="card-text text-center display-6">{{obj.productTitle}}</p>
+        <p class="card-text">{{obj.description}}</p>
+        <button class="btn btn-warning d-block mx-auto px-3"><i class="bi bi-cart-plus"> ADD PRODUCT</i></button>
         </div>
     </div>
 </div>

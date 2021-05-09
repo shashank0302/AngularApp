@@ -7,13 +7,21 @@ import {FormsModule} from '@angular/forms';
 import { ProductOneComponent } from './product-one/product-one.component';
 import { ProductsTempComponent } from './products-temp/products-temp.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductOneComponent,
     ProductsTempComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    RegisterComponent,
+    LoginComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,

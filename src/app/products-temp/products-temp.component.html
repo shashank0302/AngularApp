@@ -1,11 +1,10 @@
+<div class="text-center display-3">Mobile Phones</div>
+
 <div class="text-center lop">
     <h3>No.of products in cart: {{count}} </h3>
     <ul *ngFor="let re of recievedDetails" class="list-group">
         <li class="list-group-item">
         {{re.productTitle}} added to cart
-        </li>
-        <li class="list-group-item">
-            <img src={{re.productImage}} width="50%" height="100px" alt="">
         </li>
     </ul>
 </div>

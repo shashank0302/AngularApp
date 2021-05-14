@@ -12,9 +12,5 @@ export class ProductOneComponent{
   //recieving data
   @Input() obj:Product
 
-  @Output() myEvent=new EventEmitter()
 
-  sendDetails(Title){
-    this.myEvent.emit(Title)
-  }
 }

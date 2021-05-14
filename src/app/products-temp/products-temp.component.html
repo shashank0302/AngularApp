@@ -1,4 +1,39 @@
-<div class="text-center display-3">Mobile Phones</div>
+<ul class="nav  nav-fill">
+    <li class="nav-item">
+      <a class="nav-link text-dark" routerLink="mobiles" routerLinkActive="active">Mobile Phones</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" routerLink="laptops" routerLinkActive="active">Laptops</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" routerLink="televisions" routerLinkActive="active">TV's</a>
+    </li>
+  </ul>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="text-center display-3">Mobile Phones</div>
 
 <div class="text-center lop">
     <h3>No.of products in cart: {{count}} </h3>
@@ -7,11 +42,9 @@
         {{re.productTitle}} added to cart
         </li>
     </ul>
-</div>
+</div> -->
 
-<div class="row row-cols-md-2 row-cols-lg-3 row-cols-sm-1 row-cols-1" id="space">
-    <div class="col" *ngFor="let i of products">
-        <app-product-one [obj]=i (myEvent)="getRecivedDetails($event)"></app-product-one>
-    </div>
 
-</div>
+
+
+

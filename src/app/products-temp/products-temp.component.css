@@ -1,3 +1,14 @@
-.lop{
-    font-family: 'Open Sans', sans-serif;
+
+
+li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+   
+}
+
+.active{
+    background-color: goldenrod;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }

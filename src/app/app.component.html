@@ -1,7 +1,7 @@
 
-<nav class="navbar navbar-dark bg-dark navbar-expand" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-dark bg-dark navbar-expand-md" style="background-color: #e3f2fd;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"> <img src="https://i.pinimg.com/originals/29/f6/41/29f641b507ccb60bb7a62a830b988736.jpg" width="50px" height="50px" alt=""> </a>
+    <a class="navbar-brand" routerLink="home"> <img src="https://i.pinimg.com/originals/29/f6/41/29f641b507ccb60bb7a62a830b988736.jpg" width="50px" height="50px" alt=""> </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,8 +23,15 @@
           <a class="nav-link " routerLink="contactus" routerLinkActive="active">Contactus</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link " routerLink="products" routerLinkActive="active">Products</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLink="products" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="products/mobiles">Mobiles</a></li>
+            <li><a class="dropdown-item" routerLink="products/laptops">Laptops</a></li>
+            <li><a class="dropdown-item" routerLink="products/televisions">Televisions</a></li>
+          </ul>
         </li>
       </ul>
 
@@ -43,6 +50,22 @@
 
 
 <app-footer class="mt-auto"></app-footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

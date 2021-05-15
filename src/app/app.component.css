@@ -2,3 +2,6 @@
     font-family: 'Lato', sans-serif;
     size: 2em;
 } */
+.dropdown-menu{
+    min-width: 100px;
+}

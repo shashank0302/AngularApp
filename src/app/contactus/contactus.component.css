@@ -1,0 +1,21 @@
+.font1{
+    font-family: 'Open Sans', sans-serif;
+    size: 30px;
+    font-size: xx-large;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    color: brown;
+    
+}
+
+.font2{
+    font-family: 'Open Sans', sans-serif;
+    size: 30px;
+    font-size: xx-large;
+    border: rgb(17, 13, 13) solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    color: brown;
+    
+}

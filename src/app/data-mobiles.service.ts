@@ -62,30 +62,7 @@ export class DataMobilesService {
     processor:"Snapdragon 900",
     productImage:"https://www.gizmochina.com/wp-content/uploads/2019/09/google-pixel-500x500.jpg"
     },
-    {
-      productTitle:"Google Pixel",
-      description:"Model: Pixel-3 Brand: Google",
-      cam:"20mp",
-      ram:"8gb",
-      processor:"Snapdragon 900",
-      productImage:"https://www.gizmochina.com/wp-content/uploads/2019/09/google-pixel-500x500.jpg"
-      },
-      {
-        productTitle:"Google Pixel",
-        description:"Model: Pixel-3 Brand: Google",
-        cam:"20mp",
-        ram:"8gb",
-        processor:"Snapdragon 900",
-        productImage:"https://www.gizmochina.com/wp-content/uploads/2019/09/google-pixel-500x500.jpg"
-        },
-        {
-          productTitle:"Google Pixel",
-          description:"Model: Pixel-3 Brand: Google",
-          cam:"20mp",
-          ram:"8gb",
-          processor:"Snapdragon 900",
-          productImage:"https://www.gizmochina.com/wp-content/uploads/2019/09/google-pixel-500x500.jpg"
-          }
+    
     ];
 
     getData():Product[]{

@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { LaptopsComponent } from './laptops/laptops.component';
 import { LoginComponent } from './login/login.component';
 import { MobilesComponent } from './mobiles/mobiles.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductsTempComponent } from './products-temp/products-temp.component';
 import { RegisterComponent } from './register/register.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'products',component:ProductsTempComponent, children:[{path:'mobiles',component:MobilesComponent},{path:'laptops',component:LaptopsComponent},{path:'televisions',component:TelevisionsComponent},{path:'',redirectTo:'/products/mobiles',pathMatch:'full'}]},
   {path:'contactus',component:ContactusComponent},
-  {path:'',redirectTo:'/login',pathMatch:'full'}
+  {path:'',redirectTo:'/home',pathMatch:'full'},
+  {path:'**',component:PagenotfoundComponent}
 ];
 
 @NgModule({

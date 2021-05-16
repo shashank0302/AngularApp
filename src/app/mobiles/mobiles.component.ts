@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { observable } from 'rxjs';
 import { DataMobilesService } from '../data-mobiles.service';
 import { Product } from '../models/product.model';
 
@@ -14,7 +15,14 @@ export class MobilesComponent implements OnInit{
   constructor(private dataObj:DataMobilesService ){}
 
   ngOnInit(){
-    this.products=this.dataObj.getData();
+    this.dataObj.getData().subscribe(
+      data=>{
+        this.products=data
+      },
+      err=>{
+        console.log("er is",err)
+      }
+    )
   }
   
 

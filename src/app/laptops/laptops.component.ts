@@ -9,9 +9,16 @@ import { Product2 } from '../models/product2.model';
 })
 export class LaptopsComponent implements OnInit{
 
-    productss:Product2[]=[]
+    laptops:Product2[]=[]
     constructor(private dsObj:DataLaptopService){}
   ngOnInit(){
-    this.productss=this.dsObj.getData()
+   this.dsObj.getLaptopData().subscribe(
+     lapData=>{
+       this.laptops=lapData
+     },
+     err=>{
+       console.log("err is ",err)
+     }
+   )
   }
 }

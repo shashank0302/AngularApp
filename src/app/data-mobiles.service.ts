@@ -12,7 +12,7 @@ export class DataMobilesService {
 
 
     getData():Observable<Product[]>{
-      return this.ho.get<Product[]>("assets/data.json")
+      return this.ho.get<Product[]>("assets/mobileData.json")
     }
 
   }

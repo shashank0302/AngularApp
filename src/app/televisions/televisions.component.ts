@@ -8,13 +8,20 @@ import { Product } from '../models/product.model';
   styleUrls: ['./televisions.component.css']
 })
 export class TelevisionsComponent implements OnInit {
-    products:Product[]=[]
+
+    televisions:Product[]=[]
     constructor(private dsObj:DataTelevisionService){}
 
     ngOnInit(){
-      this.products=this.dsObj.getData()
+      this.dsObj.getTvData().subscribe(
+        tvData=>{
+          this.televisions=tvData;
+        },
+        err=>{
+          console.log("err is",err)
+        }
+      )
     }
-
 
 
 }

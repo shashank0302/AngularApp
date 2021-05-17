@@ -1,6 +1,4 @@
-<h6 class="text-center text-primary display-6"> page No: {{fakeData1.page}} </h6>
-
-
+<h3 class="text-center mt-5 text-primary text-decoration-underline"> Counsuming API </h3>
 <div class="row row-cols-lg-2 row-cols-1" >
     <div class="col" *ngFor="let data of fakeData2">
         <div class="card m-3">
@@ -22,8 +20,8 @@
                 <div class="container border border-primary mx-auto te">
                     <h5 class="text-center text-wrap fw-bold text-decoration-underline"> Contact-Details </h5>
                     <p class=" text-wrap fw-bold fs-6">Phone: {{data.phone}} <br> Website: {{data.website}} <br> Company Name: {{data.company.name}} <br>
-                     Company Catchphase: {{data.company.catchphase}} <br>
-                     Company BS: '{{data.company.bs}}' </p>
+                      Company Catchphrase: <span class="text-success"> "{{data.company.catchPhrase}}" </span> <br>
+                     Company BS: <span class="text-danger"> '{{data.company.bs}}' </span> </p>
                 </div>
 
                </div>

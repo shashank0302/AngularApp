@@ -16,6 +16,7 @@ import { LaptopsComponent } from './laptops/laptops.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
 import { ProductTwoComponent } from './product-two/product-two.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { DummyComponent } from './dummy/dummy.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     LaptopsComponent,
     TelevisionsComponent,
     ProductTwoComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    DummyComponent
   ],
   imports: [
     BrowserModule,

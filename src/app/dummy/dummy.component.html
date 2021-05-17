@@ -1,0 +1,60 @@
+<h6 class="text-center text-primary display-6"> page No: {{fakeData1.page}} </h6>
+
+
+<div class="row row-cols-lg-2 row-cols-1" >
+    <div class="col" *ngFor="let data of fakeData2">
+        <div class="card m-3">
+            <div class="card-body" [ngStyle]=" {'background-color' : data.color } ">
+               <h3 class="text-center my-5"> ID: {{data.id}} <br>  {{data.name}} </h3>
+               <p>Username: {{data.username}} <br> email : {{data.email}}</p>
+               <hr>
+               <div class="container d-flex mx-auto">
+
+                <div class="container border border-primary mx-auto">
+                    <h5 class="text-center text-wrap fw-bold text-decoration-underline">Address</h5>
+                    <p class=" text-wrap fw-bold fs-6">street: {{data.address.street}} <br> 
+                     suite: {{data.address.suite}} <br>
+                     city: {{data.address.city}} <br>
+                     zipcode: {{data.address.zipcode}} <br>
+                     geographic Latitiude: {{data.address.geo.lat}} <br>
+                     geographic Longitude: {{data.address.geo.lng}}</p>
+                </div> 
+                <div class="container border border-primary mx-auto te">
+                    <h5 class="text-center text-wrap fw-bold text-decoration-underline"> Contact-Details </h5>
+                    <p class=" text-wrap fw-bold fs-6">Phone: {{data.phone}} <br> Website: {{data.website}} <br> Company Name: {{data.company.name}} <br>
+                     Company Catchphase: {{data.company.catchphase}} <br>
+                     Company BS: '{{data.company.bs}}' </p>
+                </div>
+
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<h1 class="text-center"> Page: {{fakeData1.page}} </h1>
+
+
+
+<table class="table text-center  table-bordered border-dark p-5" style="width: 100%;">
+    <caption>Row color indicates the given color name.</caption>
+    <thead class="p-5 m-5">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Pantone_value</th>
+        </tr>
+    </thead>
+
+    <tbody class="mx-auto">
+        <tr *ngFor="let info of fakeData1.data" class="text-start fw-bold" [ngStyle]="{'background-color': info.color }" >
+            <td>{{info.id}}</td>
+            <td>{{info.name}}</td>
+            <td> {{info.year}} </td>
+            <td> {{info.pantone_value}} </td>
+        </tr>
+    </tbody>
+</table>

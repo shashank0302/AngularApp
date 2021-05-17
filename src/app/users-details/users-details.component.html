@@ -1,0 +1,26 @@
+<div class="container mt-5 bgc p-5">
+    <div class="d-flex justify-content-around">
+        <h1 class="text-start ms-5 display-1 text-primary fst-italic fon "> {{user.id}}. {{user.name}}</h1>
+        <img src={{user.profilePic}} alt="" width="150px" height="150px">
+    </div>
+    <hr style="color: rgb(1, 41, 1);">
+    
+
+    <div class="d-flex justify-content-evenly">
+        <div class="container plak border border-dark border-4 p-3">
+            <h3 class="text-decoration-underline fw-bold"> Contact-Info</h3>
+            <h5>Email: <span class="text-primary"> {{user.email}} </span> </h5>
+            <h5>Mobile Number:  <span class="text-primary"> {{user.mobileno}} </span> </h5>
+        </div>
+
+        <div class="container plak border border-dark border-4 p-3">
+            <h3 class="text-decoration-underline fw-bold">Address</h3>
+            <h5 class="text-dark fst-italic"> Street: {{user.address.street}} <br> Area: {{user.address.area}} <br> City: {{user.address.city}} <br> Zipcode: {{user.address.zipcode}} </h5>
+        </div>
+    </div>
+
+        <h5 class="bg-dark p-3 mt-4 text-white text-decoration-underline text-center">Profession:  {{user.profession}} </h5>
+ 
+
+
+</div>

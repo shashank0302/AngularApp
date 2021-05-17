@@ -1,0 +1,17 @@
+.plak{
+    margin: 0px 100px;
+    font-family: 'Newsreader', serif;
+}
+
+.bgc{
+    background: url('https://img.freepik.com/free-vector/abstract-blue-white-wave-background_41084-451.jpg?size=626&ext=jpg') no-repeat center ;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.fon{
+    font-family: 'Newsreader', serif;
+    
+}

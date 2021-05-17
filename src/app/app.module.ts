@@ -17,6 +17,8 @@ import { TelevisionsComponent } from './televisions/televisions.component';
 import { ProductTwoComponent } from './product-two/product-two.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { DummyComponent } from './dummy/dummy.component';
+import { UsersComponent } from './users/users.component';
+import { UsersDetailsComponent } from './users-details/users-details.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { DummyComponent } from './dummy/dummy.component';
     TelevisionsComponent,
     ProductTwoComponent,
     PagenotfoundComponent,
-    DummyComponent
+    DummyComponent,
+    UsersComponent,
+    UsersDetailsComponent
   ],
   imports: [
     BrowserModule,

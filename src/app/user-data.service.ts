@@ -14,8 +14,8 @@ export class UserDataService {
       return this.hc.get<Users>('http://localhost:3000/users')
   }
 
-  getUserDataById(id):Observable<any>{
-    return this.hc.get<any>('http://localhost:3000/users/'+id)
+  getUserDataById(id):Observable<Users>{
+    return this.hc.get<Users>('http://localhost:3000/users/'+id)
   }
 
 }

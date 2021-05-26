@@ -11,6 +11,6 @@ export class DataLaptopService {
   constructor(private hc:HttpClient) { }
 
   getLaptopData():Observable<Product2[]>{
-    return this.hc.get<Product2[]>('assets/laptopsData.json')
+    return this.hc.get<Product2[]>('http://localhost:3000/laptops')
   }
 }

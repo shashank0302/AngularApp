@@ -10,8 +10,8 @@ export class UserDataService {
 
   constructor(private hc:HttpClient) { }
 
-  getUserData():Observable<Users>{
-      return this.hc.get<Users>('http://localhost:3000/users')
+  getUserData():Observable<Users[]>{
+      return this.hc.get<Users[]>('http://localhost:3000/users')
   }
 
   getUserDataById(id):Observable<Users>{

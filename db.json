@@ -1,145 +1,263 @@
 {
-    "users":[
-        {
-            "id": "1",
-            "email": "sam@gmail.com",
-            "name": "Samantha Ruth",
-            "profilePic": "https://media.istockphoto.com/photos/passport-picture-of-a-smiling-turkish-businesswoman-picture-id856599656?k=6&m=856599656&s=612x612&w=0&h=4Nwo_zZorMKSrrHb-c9DoO7JarfeuKQXXV2U6Ky6N9Q=",
-            "address":{
-                "street":"Number:17",
-                "area": "Ameerpet",
-                "city": "Hyderabad",
-                "zipcode": "500044"
-            },
-            "profession": "SDE",
-            "mobileno": "978654232"
-        },
-        {
-            "id": "2",
-            "email": "john@gmail.com",
-            "name": "Johnson Mark",
-            "profilePic": "https://lh3.googleusercontent.com/proxy/D40VlZLdThl3NAE7vd6uvbZaccNrFigskdHSe8mk5u0QTyXdWWBu2arry5wlt3M5-SjGhwGBuhyeDWOPhQrf4ufNmZOskx7xDN2WhpU",
-            "address":{
-                "street":"Number:17",
-                "area": "Nallakunta",
-                "city": "Hyderabad",
-                "zipcode": "500044"
-            },
-            "profession": "DEV",
-            "mobileno": "9786523456"
-        },
-        {
-            "id": "3",
-            "email": "angela@gmail.com",
-            "name": "Angela Martin",
-            "profilePic": "https://image.shutterstock.com/image-photo/passport-picture-businesswoman-brown-hair-260nw-250775908.jpg",
-            "address":{
-                "street":"Number:7",
-                "area": "Cliford Avenue",
-                "city": "New Jersey",
-                "zipcode": "100987"
-            },
-            "profession": "Surgeon",
-            "mobileno": "123345667"
-        },
-        {
-            "id": "4",
-            "email": "robin@gmail.com",
-            "name": "Robinson Thatch",
-            "profilePic": "https://thumbs.dreamstime.com/b/passport-document-id-photo-business-man-portrait-concept-young-handsome-stylish-guy-formal-wear-white-background-119717703.jpg",
-            "address":{
-                "street":"Number:1",
-                "area": "Denver Square",
-                "city": "Chicago",
-                "zipcode": "100022"
-            },
-            "profession": "Sales Manager",
-            "mobileno": "286523456"
-        },
-        {
-            "id": "5",
-            "email": "robert@gmail.com",
-            "name": "Robert Clives",
-            "profilePic": "https://lh3.googleusercontent.com/proxy/106liRbgfRBavfn3SwKZLmxajJo-hnN0Z4XQB2KMyV3V4TnE9bi-1dcZlTvpE_QH4AdyXnGVlf6buzOHoOd4QU4wz7yUa3G_ObR3bqR3vWvaBr1BJ6g",
-            "address":{
-                "street":"jefersson st",
-                "area": "UC Road",
-                "city": "Cincinati",
-                "zipcode": "200876"
-            },
-            "profession": "Teacher of Economics",
-            "mobileno": "123445678"
-        },
-        {
-            "id": "6",
-            "email": "maya@gmail.com",
-            "name": "Maya Harris",
-            "profilePic": "https://image.shutterstock.com/image-photo/passport-photo-portrait-asian-smiling-260nw-1041841363.jpg",
-            "address":{
-                "street":"1st street",
-                "area": "Downtown",
-                "city": "Los Angeles",
-                "zipcode": "290002"
-            },
-            "profession": "Actress",
-            "mobileno": "2789027442"
-        },
-        {
-            "id": "7",
-            "email": "chris@gmail.com",
-            "name": "Chirstoper Nolan",
-            "profilePic": "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F20903af9a835ed16c570511ef2b521a2%2F0x0.jpg",
-            "address":{
-                "street":"St.Marks",
-                "area": "Beverly Hills",
-                "city": "San Diego",
-                "zipcode": "500042"
-            },
-            "profession": "Director In Hollywood",
-            "mobileno": "97865234666"
-        },
-        {
-            "id": "8",
-            "email": "jennifer@gmail.com",
-            "name": "Jennifer Sams",
-            "profilePic": "https://passportinfo.com/wp-content/uploads/2015/02/Passport-Photos-featured1.jpg",
-            "address":{
-                "street":"St.Johnson",
-                "area": "Beverly Hills",
-                "city": "San Diego",
-                "zipcode": "500042"
-            },
-            "profession": "Marketing Designer",
-            "mobileno": "9728566542"
-        },
-        {
-            "id": "9",
-            "email": "chris@gmail.com",
-            "name": "Chirstoper Nolan",
-            "profilePic": "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F20903af9a835ed16c570511ef2b521a2%2F0x0.jpg",
-            "address":{
-                "street":"St.Marks",
-                "area": "Beverly Hills",
-                "city": "San Diego",
-                "zipcode": "500042"
-            },
-            "profession": "Director In Hollywood",
-            "mobileno": "97865234666"
-        },
-        {
-            "id": "10",
-            "email": "paul@gmail.com",
-            "name": "Paul Libestein",
-            "profilePic": "https://upload.wikimedia.org/wikipedia/commons/a/af/PaulLieberstein.jpg",
-            "address":{
-                "street":"Number:10",
-                "area": "ByWaters",
-                "city": "Scarnton",
-                "zipcode": "500034"
-            },
-            "profession": "HR",
-            "mobileno": "97898264456"
-        }
-           
-    ]
+  "television": [
+    {
+      "productTitle": "MicroMax",
+      "description": "Model: M30 Brand: MicroMax",
+      "cam": "20mp",
+      "ram": "4gb",
+      "processor": "Snapdragon 880",
+      "productImage": "https://5.imimg.com/data5/KI/SG/MY-19054476/led-television-60-cm-gl24h0b0cf-500x500.png"
+    },
+    {
+      "productTitle": "Samsung 32-Inch",
+      "description": "Model: A5 Brand: Samsung",
+      "cam": "20mp",
+      "ram": "4gb",
+      "processor": "Snapdragon 880",
+      "productImage": "https://www.collinsdictionary.com/images/full/television_160593200.jpg"
+    }
+  ],
+  "laptops": [
+    {
+      "id": 1,
+      "productTitle": "Dell G-3",
+      "description": "Model: G3 Brand: Dell",
+      "ram": "8gb",
+      "processor": "Intel i5-9th gen",
+      "productImage": "https://i.dell.com/is/image/DellContent//content/dam/global-asset-library/Products/Notebooks/g-series/g3_15_3500_non-touch/dg3500nt_cnb_00055lf110_bk_baseline.psd?fmt=pjpg&pscan=auto&scl=1&hei=402&wid=402&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&size=402,402"
+    },
+    {
+      "id": 2,
+      "productTitle": "Asus Rog",
+      "description": "Model: G14 Brand: Asus",
+      "ram": "16gb",
+      "processor": "AMD Ryxen 9",
+      "productImage": "https://static.digit.in/default/ad79f0b6ed4d4ebd0481ae9353260fd0690a0670.jpeg?tr=w-1200"
+    },
+    {
+      "id": 3,
+      "productTitle": "Alienware",
+      "description": "Model: M-3 Brand: Alienware",
+      "ram": "16gb",
+      "processor": "Intel i9",
+      "productImage": "https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/notebooks/alienware_notebooks/alienware_m15_r3/pdp/alienware-m15-r3-laptop-pdp.png?fmt=jpg&wid=570&hei=400"
+    }
+  ],
+  "mobiles": [
+    {
+      "id": 1,
+      "productTitle": "Samsung A-50",
+      "description": "Model: A50 Brand: Samsung",
+      "cam": "20mp",
+      "ram": "4gb",
+      "processor": "Snapdragon 880",
+      "productImage": "https://images.samsung.com/is/image/samsung/in-galaxy-m51-m515fz-6gb-sm-m515fzkdins-sm-m---fzkeins-304622882?$684_547_PNG$"
+    },
+    {
+      "id": 2,
+      "productTitle": "Galaxy-S9",
+      "description": "Model: S9 Brand: Samsung",
+      "cam": "25mp",
+      "ram": "4gb",
+      "processor": "Snapdragon 880",
+      "productImage": "https://www.searchpng.com/wp-content/uploads/2019/05/samsung-galaxy-s10-png-image.jpg"
+    },
+    {
+      "id": 3,
+      "productTitle": "IPhone 12 Pro",
+      "description": "Model: 12pro Brand: Iphone",
+      "cam": "50mp",
+      "ram": "12gb",
+      "processor": "Apple A13",
+      "productImage": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-red-select-2020?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1604343703000"
+    },
+    {
+      "id": 4,
+      "productTitle": "One-plus 8 Pro",
+      "description": "Model: 8Pro Brand: Oneplus",
+      "cam": "40mp",
+      "ram": "8gb",
+      "processor": "Snapdragon 850",
+      "productImage": "https://image01.oneplus.net/shop/202009/16/1-M00-19-CB-rB8LB19hd1GAbRaNAANs4AY88Fk626.png"
+    },
+    {
+      "id": 5,
+      "productTitle": "Redmi Note Plus",
+      "description": "Model: Note-Plus Brand: Redmi",
+      "cam": "23mp",
+      "ram": "3gb",
+      "processor": "Snapdragon 870",
+      "productImage": "https://i01.appmifile.com/webfile/globalimg/in/cms/FE1C9BBB-AC9A-EB3D-713C-F1718FAB3FC9.jpg"
+    },
+    {
+      "id": 6,
+      "productTitle": "Google Pixel",
+      "description": "Model: Pixel-3 Brand: Google",
+      "cam": "20mp",
+      "ram": "8gb",
+      "processor": "Snapdragon 900",
+      "productImage": "https://www.gizmochina.com/wp-content/uploads/2019/09/google-pixel-500x500.jpg"
+    },
+    {
+      "productTitle": "vivo",
+      "description": "model: skdskds",
+      "cam": "20mp",
+      "ram": "4gb",
+      "processor": "snapdrangon ",
+      "productImage": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRKfbu6FwtKkE7sHG5TJZvE2TAz5BPl6g9HrTmQl7A5TTTmMWqo3MGBBEJLmCi4MMB9LJMhVxQlqhU&usqp=CAc",
+      "id": 7
+    },
+    {
+      "productTitle": "vivo",
+      "description": "model: skdskds",
+      "cam": "20mp",
+      "ram": "4gb",
+      "processor": "snapdrangon ",
+      "productImage": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRKfbu6FwtKkE7sHG5TJZvE2TAz5BPl6g9HrTmQl7A5TTTmMWqo3MGBBEJLmCi4MMB9LJMhVxQlqhU&usqp=CAc",
+      "id": 8
+    }
+
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "sam@gmail.com",
+      "name": "Samantha Ruth",
+      "profilePic": "https://media.istockphoto.com/photos/passport-picture-of-a-smiling-turkish-businesswoman-picture-id856599656?k=6&m=856599656&s=612x612&w=0&h=4Nwo_zZorMKSrrHb-c9DoO7JarfeuKQXXV2U6Ky6N9Q=",
+      "address": {
+        "street": "Number:17",
+        "area": "Ameerpet",
+        "city": "Hyderabad",
+        "zipcode": "500044"
+      },
+      "profession": "SDE",
+      "mobileno": "978654232"
+    },
+    {
+      "id": 2,
+      "email": "john@gmail.com",
+      "name": "Johnson Mark",
+      "profilePic": "https://lh3.googleusercontent.com/proxy/D40VlZLdThl3NAE7vd6uvbZaccNrFigskdHSe8mk5u0QTyXdWWBu2arry5wlt3M5-SjGhwGBuhyeDWOPhQrf4ufNmZOskx7xDN2WhpU",
+      "address": {
+        "street": "Number:17",
+        "area": "Nallakunta",
+        "city": "Hyderabad",
+        "zipcode": "500044"
+      },
+      "profession": "DEV",
+      "mobileno": "9786523456"
+    },
+    {
+      "id": 3,
+      "email": "angela@gmail.com",
+      "name": "Angela Martin",
+      "profilePic": "https://image.shutterstock.com/image-photo/passport-picture-businesswoman-brown-hair-260nw-250775908.jpg",
+      "address": {
+        "street": "Number:7",
+        "area": "Cliford Avenue",
+        "city": "New Jersey",
+        "zipcode": "100987"
+      },
+      "profession": "Surgeon",
+      "mobileno": "123345667"
+    },
+    {
+      "id": 4,
+      "email": "robin@gmail.com",
+      "name": "Robinson Thatch",
+      "profilePic": "https://thumbs.dreamstime.com/b/passport-document-id-photo-business-man-portrait-concept-young-handsome-stylish-guy-formal-wear-white-background-119717703.jpg",
+      "address": {
+        "street": "Number:1",
+        "area": "Denver Square",
+        "city": "Chicago",
+        "zipcode": "100022"
+      },
+      "profession": "Sales Manager",
+      "mobileno": "286523456"
+    },
+    {
+      "id": 5,
+      "email": "robert@gmail.com",
+      "name": "Robert Clives",
+      "profilePic": "https://lh3.googleusercontent.com/proxy/106liRbgfRBavfn3SwKZLmxajJo-hnN0Z4XQB2KMyV3V4TnE9bi-1dcZlTvpE_QH4AdyXnGVlf6buzOHoOd4QU4wz7yUa3G_ObR3bqR3vWvaBr1BJ6g",
+      "address": {
+        "street": "jefersson st",
+        "area": "UC Road",
+        "city": "Cincinati",
+        "zipcode": "200876"
+      },
+      "profession": "Teacher of Economics",
+      "mobileno": "123445678"
+    },
+    {
+      "id": 6,
+      "email": "maya@gmail.com",
+      "name": "Maya Harris",
+      "profilePic": "https://image.shutterstock.com/image-photo/passport-photo-portrait-asian-smiling-260nw-1041841363.jpg",
+      "address": {
+        "street": "1st street",
+        "area": "Downtown",
+        "city": "Los Angeles",
+        "zipcode": "290002"
+      },
+      "profession": "Actress",
+      "mobileno": "2789027442"
+    },
+    {
+      "id": 7,
+      "email": "chris@gmail.com",
+      "name": "Chirstoper Nolan",
+      "profilePic": "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F20903af9a835ed16c570511ef2b521a2%2F0x0.jpg",
+      "address": {
+        "street": "St.Marks",
+        "area": "Beverly Hills",
+        "city": "San Diego",
+        "zipcode": "500042"
+      },
+      "profession": "Director In Hollywood",
+      "mobileno": "97865234666"
+    },
+    {
+      "id": 8,
+      "email": "jennifer@gmail.com",
+      "name": "Jennifer Sams",
+      "profilePic": "https://passportinfo.com/wp-content/uploads/2015/02/Passport-Photos-featured1.jpg",
+      "address": {
+        "street": "St.Johnson",
+        "area": "Beverly Hills",
+        "city": "San Diego",
+        "zipcode": "500042"
+      },
+      "profession": "Marketing Designer",
+      "mobileno": "9728566542"
+    },
+    {
+      "id": 9,
+      "email": "chris@gmail.com",
+      "name": "Chirstoper Nolan",
+      "profilePic": "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F20903af9a835ed16c570511ef2b521a2%2F0x0.jpg",
+      "address": {
+        "street": "St.Marks",
+        "area": "Beverly Hills",
+        "city": "San Diego",
+        "zipcode": "500042"
+      },
+      "profession": "Director In Hollywood",
+      "mobileno": "97865234666"
+    },
+    {
+      "id": 10,
+      "email": "paul@gmail.com",
+      "name": "Paul Libestein",
+      "profilePic": "https://upload.wikimedia.org/wikipedia/commons/a/af/PaulLieberstein.jpg",
+      "address": {
+        "street": "Number:10",
+        "area": "ByWaters",
+        "city": "Scarnton",
+        "zipcode": "500034"
+      },
+      "profession": "HR",
+      "mobileno": "97898264456"
+    }
+  ]
 }

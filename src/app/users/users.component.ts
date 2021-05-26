@@ -9,7 +9,7 @@ import { UserDataService } from '../user-data.service';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit{
-  users:Users
+  users:Users[]
   constructor(private usobj:UserDataService,private routerData:Router) { }
 
   ngOnInit(){

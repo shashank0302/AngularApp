@@ -1,0 +1,11 @@
+a{
+    color: black;
+}
+
+a:hover{
+    color: chocolate;
+}
+a:active{
+    color: blue;
+    font-weight: bold;
+}

@@ -12,7 +12,7 @@ export class DataTelevisionService {
   constructor(private hc:HttpClient) { }
 
   getTvData():Observable<Product[]>{
-    return this.hc.get<Product[]>('assets/tvData.json')
+    return this.hc.get<Product[]>('http://localhost:3000/television')
   }
 
 }

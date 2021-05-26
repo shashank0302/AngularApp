@@ -12,7 +12,11 @@ export class DataMobilesService {
 
 
     getData():Observable<Product[]>{
-      return this.ho.get<Product[]>("assets/mobileData.json")
+      return this.ho.get<Product[]>("http://localhost:3000/mobiles")
     }
 
+
+    createNewMobile(ps):Observable<any>{
+      return this.ho.post("http://localhost:3000/mobiles",ps)
+    }
   }

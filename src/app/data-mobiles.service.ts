@@ -19,4 +19,12 @@ export class DataMobilesService {
     createNewMobile(ps):Observable<any>{
       return this.ho.post("http://localhost:3000/mobiles",ps)
     }
+
+    updateMobile(modObj):Observable<any>{
+      return this.ho.put("http://localhost:3000/mobiles/"+modObj.id,modObj)
+    }
+
+    deleteMobileobj(mob):Observable<any>{
+      return this.ho.delete("http://localhost:3000/mobiles/"+mob.id)
+    }
   }

@@ -1,14 +1,104 @@
-<div class="row row-cols-md-3 row-cols-1">
-    <div class="col" *ngFor="let mobile of mobiles">
-        <div class="card m-4 bg-dark text-white" >
-            <div class="card-img"><img src={{mobile.productImage}} alt="" width="100%" height="300px"></div>
-            <div class="card-body">
-                <h3>{{mobile.productTitle}}</h3>
-                <p> {{mobile.cam}} </p>
-                <p>{{mobile.ram}} </p>
-                <p>{{mobile.processor}} </p>
-                <p> {{mobile.description}} </p>
-            </div>
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+  <div class="col" *ngFor="let mobile of mobiles; let ind = index">
+    <div class="card m-4 bg-dark text-white">
+      <div class="card-img">
+        <img
+          src="{{ mobile.productImage }}"
+          alt=""
+          width="100%"
+          height="300px"
+        />
+      </div>
+      <!-- <form action="" #ref="ngForm" (ngSubmit)="saveMobile(ref.value)"> -->
+        <div class="card-body">
+          <div>
+            <span *ngIf="!editStatus || editMobileind !== ind">{{
+              mobile.productTitle
+            }}</span>
+            <span *ngIf="editStatus && editMobileind == ind"
+              ><input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="enter Title"
+                [(ngModel)]="editmobileobj.productTitle"
+            /></span>
+          </div>
+          <div>
+            <span *ngIf="!editStatus || editMobileind !== ind">{{
+              mobile.description
+            }}</span>
+            <span *ngIf="editStatus && editMobileind == ind"
+              ><input
+                type="text"
+                name="description"
+                id="description"
+                placeholder="enter description"
+                [(ngModel)]="editmobileobj.description"
+            /></span>
+          </div>
+          <div>
+            <span *ngIf="!editStatus || editMobileind !== ind">{{
+              mobile.cam
+            }}</span>
+            <span *ngIf="editStatus && editMobileind == ind"
+              ><input
+                type="text"
+                name="cam"
+                id="cam"
+                placeholder="enter cam"
+                [(ngModel)]="editmobileobj.cam"
+            /></span>
+          </div>
+          <div>
+            <span *ngIf="!editStatus || editMobileind !== ind">{{
+              mobile.ram
+            }}</span>
+            <span *ngIf="editStatus && editMobileind == ind"
+              ><input
+                type="text"
+                name="ram"
+                id="ram"
+                placeholder="enter ram"
+                [(ngModel)]="editmobileobj.ram"
+            /></span>
+          </div>
+          <div>
+            <span *ngIf="!editStatus || editMobileind !== ind">{{
+              mobile.processor
+            }}</span>
+            <span *ngIf="editStatus && editMobileind == ind"
+              ><input
+                type="text"
+                name="processor"
+                id="processor"
+                placeholder="enter processor"
+                [(ngModel)]="editmobileobj.processor"
+            /></span>
+          </div>
         </div>
+      <!-- </form> -->
+      <div class="card-footer d-flex justify-content-evenly">
+        <button
+          class="btn btn-sm btn-warning"
+          (click)="editMobile(mobile, ind)"
+          *ngIf="!editStatus || editMobileind !== ind"
+        type="button">
+          <i class="bi bi-pencil-square" ></i> <br />Edit
+        </button>
+        <button
+          class="btn btn-sm btn-success"
+          (click)="saveMobile(editmobileobj)"
+          *ngIf="editStatus && editMobileind == ind"
+          type="submit"
+        >
+          <i class="bi bi-save"></i> <br />Save
+        </button>
+        <button class="btn btn-sm btn-danger" (click)="deleteMobile(mobile)" type="button">
+          <i class="bi bi-trash-fill"></i> <br />
+          Delete
+        </button>
+      </div>
     </div>
+  </div>
 </div>

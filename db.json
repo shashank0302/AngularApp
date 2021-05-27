@@ -100,23 +100,13 @@
     },
     {
       "productTitle": "vivo",
-      "description": "model: skdskds",
-      "cam": "20mp",
-      "ram": "4gb",
-      "processor": "snapdrangon ",
+      "description": "model: v10",
+      "cam": "22mp",
+      "ram": "6gb",
+      "processor": "snapdrangon 220",
       "productImage": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRKfbu6FwtKkE7sHG5TJZvE2TAz5BPl6g9HrTmQl7A5TTTmMWqo3MGBBEJLmCi4MMB9LJMhVxQlqhU&usqp=CAc",
       "id": 7
-    },
-    {
-      "productTitle": "vivo",
-      "description": "model: skdskds",
-      "cam": "20mp",
-      "ram": "4gb",
-      "processor": "snapdrangon ",
-      "productImage": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRKfbu6FwtKkE7sHG5TJZvE2TAz5BPl6g9HrTmQl7A5TTTmMWqo3MGBBEJLmCi4MMB9LJMhVxQlqhU&usqp=CAc",
-      "id": 8
     }
-
   ],
   "users": [
     {
